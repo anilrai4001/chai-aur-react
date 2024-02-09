@@ -9,7 +9,7 @@ const reactElement = {
     children: 'click here to visit google'
 }
 
-const insertElement = (element, container)=>{
+const customRender = (element, container)=>{
     const newElement = document.createElement(element.type);
     newElement.innerHTML = element.children;
 
@@ -20,4 +20,4 @@ const insertElement = (element, container)=>{
     container.appendChild(newElement);
 }
 
-insertElement(reactElement, root);
+customRender(reactElement, root);
